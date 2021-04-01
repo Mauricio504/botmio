@@ -224,7 +224,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `_👋🏻Adios_ *@${num.split('@')[0]}* _No te extrañaremos, jaja se fue un fantasma_ *[El siguiente en salir será buzoniadoo, ok.no]*`
+				teks = `_👋🏻Adios_ *@${num.split('@')[0]}* _No te extrañaremos, jaja se fue un fantasma_ *[El siguiente en salir será buzoniado, ok.no]*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
